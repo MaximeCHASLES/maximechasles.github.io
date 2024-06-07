@@ -31,6 +31,7 @@ a {
 .page {
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .page:nth-child(2n) {
@@ -40,6 +41,8 @@ a {
 .page:nth-child(2n + 1) {
     background-color: var(--color-bg-2);
 }
+
+
 
 /*** MENU ***/
 
@@ -162,7 +165,8 @@ a {
     position: relative;
     width: 100%;
     padding: 5rem 3rem;
-    max-height: 100vh;
+    height: 100%;
+   
 }
 
 .about_img {
@@ -182,7 +186,7 @@ a {
 .about__title {
     color: white;
     font-family: 'Urbanist';
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
    
 }
@@ -190,8 +194,23 @@ a {
 .about__bio {
     color: white;
     font-family: 'Urbanist';
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 200;
     text-align: justify;
     margin-bottom: 2rem;
 }
+
+.about__bio.accent {
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+
+.about__bio.txt-left {
+    align-self: flex-start;
+}
+
+.about__bio.txt-right {
+    align-self: flex-end;
+}
+
