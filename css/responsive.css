@@ -15,6 +15,10 @@
         max-width: 30rem;
         max-height: 30rem;
     }
+
+    .about__bios {
+        padding: 0 2rem;
+    }
 }
 
 /**
@@ -79,11 +83,22 @@
         height: unset;
         background-color: transparent;
         margin: 2rem;
+        transform: unset;
+        opacity: unset;
+        transition: unset;
     }
 
     .main_menu_links li {
-
+        margin-bottom: 1.5rem;
+        opacity: 0;
+        transform: translateY(3px);
     }
+
+    .main_menu_links li.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 
     .main_menu_links .home {
         display: none;
@@ -97,6 +112,8 @@
         font-size: 3rem;
         transition: all ease-in-out 0.2s;
     }
+
+    
 
     .main_menu_link:hover {
         border-bottom: 1px solid white;
