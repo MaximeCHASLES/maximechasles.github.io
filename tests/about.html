@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<style>
+    :root {
+        --color-bg-1: #39393E;
+        --color-bg-2: #292929;
+
+        --color-3: #756A63;
+        --color-4: #714448;
+        --color-5: #754D3F;
+       
+    }
+
+
+    body {
+        
+        background: var(--color-bg-1);
+        height: 100vh;
+        background-size: cover;
+    }
+    img {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 400px;
+        z-index: 1;
+    }
+
+   
+
+    .frame {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        border: 5px solid white;
+        width: 400px;
+        height: 400px;
+    }
+
+    .bio {
+        position: absolute;
+        top: 20%;
+        left: 42%;
+        margin: 0;
+    }
+
+    .bio__title {
+        color: white;
+        font-family: 'Urbanist';
+        font-size: 5rem;
+        margin-bottom: 2rem;
+       
+    }
+
+    .bio__content {
+        color: white;
+        font-family: 'Urbanist';
+        font-size: 2.5rem;
+        font-weight: 200;
+        width: 760px;
+        text-align: justify;
+    }
+
+</style>
+
+<body>
+
+    <img src="./img/jpg/portrait.jpg" alt="">
+
+    <div class="frame"></div>
+
+    <aside class="bio">
+        <h2 class="bio__title">À propos</h2>
+        <p class="bio__content">Barman dans une autre vie...
+
+            Je maîtrise le jargon de la mixologie, jongle avec les shakers et connais sur le bout des doigts la recette de plus d'une centaine de cocktails. J'ai fais mes armes à Tours sur la célèbre place Plumereau avant de m'envoler pour Sydney afin d'apprendre l'anglais.
+            
+            ... dorénavant étudiant en Informatique...
+            
+            Nouveau challenge, nouveau départ. J'aime la technologie, la programmation. Très rigoureux, autonome, curieux... Convaincu que le digital aura un rôle important dans les prochaines décennies, je veux faire parti de l'aventure !
+            
+            ...to be continued.</p>
+    </aside>
+    
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxime CHASLES</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+   
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+
+    <style>
+
+        body {
+            background: url(../img/jpg/bg3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        .coords {
+            position: absolute;
+            top: 1%;
+            left: 1%;
+            color: rgba(255, 255, 255, 0.52);
+            font-family: 'Urbanist';
+            font-weight: 300;
+            letter-spacing: 0.25rem;
+            font-size: 2rem;
+
+        }
+
+        .symbol {
+            color: rgba(255, 255, 255, 0.716);
+            font-family: 'Yarndings 12';
+            font-weight: 300;
+            letter-spacing: 0.25rem;
+            font-size: 2rem;
+
+        }
+
+        .burger {
+            position: absolute;
+            top: 1%;
+            right: 1%;
+            height: 3rem;
+            opacity: 0.52;
+            cursor: pointer;
+        }
+
+        .burger:hover {
+            opacity: 1;
+        }
+
+
+        .profile-pic {
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            width: 15%;
+            border-radius: 50%;
+            border: 3px solid rgb(245, 245, 245);
+            outline: 10px solid rgba(255, 255, 255, 0.063) ;
+           
+        }
+
+ 
+
+        .title-name {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            font-family: 'Urbanist';
+            font-size: 4rem;
+            font-weight: 500;
+          
+            margin: 0 auto;
+            color: white;
+        }
+
+        .social {
+            position: absolute;
+            top: 47%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-around;
+            width: 300px;
+            padding: 1rem 2rem;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+          
+          
+        }
+
+        .animated-text {
+            position: absolute;
+            top: 41%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            font-family: 'Urbanist';
+            font-size: 3rem;
+            font-weight: 200;
+          
+            margin: 0 auto;
+            color: rgb(245, 245, 245);
+        }
+
+        .social-icon {
+            height: 4rem;
+            width: 4rem;
+            transition: all 0.3s ease-in-out;
+            opacity: 0.8;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .arrow-down {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 100px;
+            transform: translateX(-50%);
+            opacity: 0.5;
+            animation: bounce 3s ease-in-out infinite;
+            cursor: pointer;
+            transition: opacity ease-in-out 0.2s;
+
+        }
+
+        .arrow-down:hover {
+            opacity: 1;
+            transition: opacity ease-in-out 0.2s;
+        }
+
+        
+
+        @keyframes bounce {
+            0% {
+                bottom: 0;
+            }
+            30% {
+                bottom: 4%;
+            }
+            40% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 3%;
+            }
+            60% {
+                bottom: 0;
+            }
+            70% {
+                bottom: 2%;
+            }
+            80% {
+                bottom: 0;
+            }
+            90% {
+                bottom: 1%;
+            }
+
+            100% {
+                bottom: 0;
+            }
+
+        }
+
+
+
+        
+
+
+
+
+   
+
+    </style>
+
+
+   
+        
+
+   <p class="coords">N46°09'3" <span class="symbol">5</span> W01°09'2"</p>
+
+   <img class="burger" src="../img/jpg/menu_40dp_FILL0_wght200_GRAD200_opsz40.png" alt="">
+   
+       
+
+    
+    <img class="profile-pic" src="../img/jpg/moutains.jpg" alt="">
+    <h1 class="title-name">Maxime CHASLES</h1>
+    <p class="animated-text">La Rochelle Université</p>
+    <div class="social">
+        <a href=""><img class="social-icon" src="../img/jpg/github_white.png" alt=""></a>
+        <a href=""><img class="social-icon" src="../img/jpg/discord_6422197.png" alt=""></a>
+        <a href=""><img class="social-icon" src="../img/jpg/linkedin_white.png" alt=""></a>
+        <a href=""><img class="social-icon" src="../img/jpg/facebook_6422199.png" alt=""></a>
+        <a href=""><img class="social-icon" src="../img/jpg/gitlab_6424085.png" alt=""></a>
+
+
+    </div>
+
+    <img class="arrow-down" src="../img/jpg/keyboard_arrow_down_40dp_FILL0_wght200_GRAD200_opsz40.png" alt="">
+
+    <footer>
+
+    </footer>
+
+
+
+
+    
+</body>
+</html>
