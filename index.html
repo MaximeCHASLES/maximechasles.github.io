@@ -12,22 +12,24 @@
 </head>
 <body>
 
-    <nav class="main_menu">
+    
+
+    <nav id="main-nav" class="main_menu">
 
         <img class="burger" src="../img/jpg/menu_40dp_FILL0_wght200_GRAD200_opsz40.png" alt="">
         <ul class="main_menu_links">
-            <li class="home"><a class="main_menu_link" href="/">Home</a></li>
-            <li><a class="main_menu_link" href="/">About</a></li>
-            <li><a class="main_menu_link" href="/">Skills</a></li>
-            <li><a class="main_menu_link" href="/">Projects</a></li>
-            <li><a class="main_menu_link" href="/">Contact</a></li>
+            <li class="home"><a class="main_menu_link" data-page="0" href="/">Home</a></li>
+            <li><a class="main_menu_link" data-page="1" href="/">About</a></li>
+            <li><a class="main_menu_link" data-page="2" href="/">Skills</a></li>
+            <li><a class="main_menu_link" data-page="3" href="/">Projects</a></li>
+            <li><a class="main_menu_link" data-page="4" href="/">Contact</a></li>
         </ul>
 
     </nav>
 
     <header id="cover" class="page">
 
-        <article class="my_card">
+        <article class="my_card visible">
             <img class="profile_img" src="./img/jpg/moutains.jpg" alt="">
             <div class="my_card__body">
                 <h1 class="my_card__name">Maxime CHASLES</h1>
@@ -46,9 +48,10 @@
 
     <main>
         <section id="about" class="page">
+            <h2 class="about__title">À propos</h2>
 
-            <article class="about">
-                <h2 class="about__title">À propos</h2>
+            <article class="about active">
+                
                 <div class="about__body">
                     <div class="about__img">
                         <div class="about__img-border"></div>
@@ -56,25 +59,34 @@
                     </div>
                     
                     <div class="about__bios">
-                        <p class="about__bio txt-left">Barman dans une autre vie...</p>
-                        <p class="about__bio">Je maîtrise le jargon de la mixologie, jongle avec les shakers et connais sur le bout des doigts la recette de plus d'une centaine de cocktails.</p>
-                        <p class="about__bio txt-center">... dorénavant étudiant en Informatique...</p>
-                        <p class="about__bio">Nouveau challenge, nouveau départ. J'aime la technologie, la programmation. Très rigoureux, autonome, curieux... Convaincu que le digital aura un rôle important dans les prochaines décennies, je veux faire parti de l'aventure !</p>
+                        <p class="about__bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum impedit nesciunt sequi provident in quasi esse odio molestias tenetur consequuntur labore quod corrupti reprehenderit aliquid porro, ab nostrum temporibus id.</p>
+                        <p class="about__bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id debitis ex, vitae recusandae odit exercitationem laborum provident? Voluptate laboriosam quos fugiat quae! Odio inventore, sequi delectus fuga voluptate consequuntur unde.</p>
+                        <p class="about__bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit consequuntur eius, distinctio, esse aperiam, dolore minus blanditiis hic odit dolores nisi. A recusandae incidunt omnis molestias, quidem iusto nulla nisi.</p>
                         <p class="about__bio txt-right">...to be continued.</p>
                     </div>
                 </div>
                 
-                </article>
+            </article>
 
 
         </section>
+
+
         <section id="skills" class="page">
+            <h2 class="skills__title">Compétences</h2>
 
-            
+    
 
         </section>
-        <section id="projects" class="page"></section>
-        <section id="contact" class="page"></section>
+
+        <section id="projects" class="page">
+            <h2 class="skills__title">Projets</h2>
+
+        </section>
+        <section id="contact" class="page">
+            <h2 class="skills__title">Contact</h2>
+
+        </section>
     </main>
     <footer class="main_footer">
 

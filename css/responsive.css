@@ -64,6 +64,24 @@
  */
 @media screen and (min-width: 1024px) {
 
+    /*** GENERAL RULES ***/
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    article {
+        opacity: 0;
+        transform: scale(0.95);
+        transition: all 0.35s ease-in-out;
+    }
+
+    article.visible {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.35s ease-in-out;
+    }
+
     /** MENU **/
 
     .main_menu {
@@ -76,7 +94,8 @@
         display: none;
     }
 
-    .main_menu_links { 
+    .main_menu_links {
+        display: flex !important;
         transform: translateY(0%);
         justify-content: space-around;
         flex-direction: row;
@@ -92,11 +111,13 @@
         margin-bottom: 1.5rem;
         opacity: 0;
         transform: translateY(3px);
+        transition: all ease-in 0.3s;
     }
 
     .main_menu_links li.active {
         opacity: 1;
         transform: translateY(0);
+        transition: all ease-in 0.3s;
     }
 
 
@@ -144,4 +165,47 @@
         height: 4rem;
         width: 4rem;
     }
+
+    /*** ABOUT ***/
+
+    
+
+    .about {
+        /* padding: 3rem 6rem;  */
+    }
+
+    .about__body {
+        flex-direction: row;
+        height: 75%;
+        /* transform: translateY(50%); */
+        gap: 5rem;
+  
+    }
+
+    .about__img {
+        max-width: 40rem;
+        min-width: 40rem;
+        min-height: 40rem;
+        max-height: 40rem;
+    }
+
+    .about__img-content {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 100%;
+    }
+
+    .about__img-border {
+        height: 40rem;
+    }
+
+    .about__bio {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /*** SKILLS ***/
+
+
 }
