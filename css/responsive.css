@@ -5,6 +5,18 @@
     
 }
 
+@media screen and (orientation: landscape) {
+    .about__body {
+        
+        flex-direction: row;
+    }
+
+    .about__img {
+        max-width: 30rem;
+        max-height: 30rem;
+    }
+}
+
 /**
  * Tablette
  */

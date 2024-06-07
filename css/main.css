@@ -55,6 +55,7 @@ a {
 
 .burger {
     display: block;
+    top: 1rem;
     right: 2rem;
     z-index: 5;
     position: absolute;
@@ -158,59 +159,86 @@ a {
 
 /*** ABOUT ***/
 
+.about {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 2rem;
+}
+
 .about__body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    width: 100%;
-    padding: 5rem 3rem;
+    gap: 3rem;
     height: 100%;
-   
+    padding: 3rem;
 }
 
-.about_img {
-    z-index: 1;
-    width: 20rem;
-    margin: 2rem 0 2rem 3.5rem;
-    align-self: flex-start;
+.about__title {
+    font-family: 'Urbanist';
+    font-size: 3rem;
+    color: white;
+}
+
+.about__img {
+    position: relative;
+    max-width: 20rem;
+    min-width: 20rem;
+    min-height: 20rem;
+    max-height: 20rem;
+}
+
+.about__img-content {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 100%;
 }
 
 .about__img-border {
     position: absolute;
-    width: 20rem;
-    height: 20rem;
     border: 3px solid white;
+    width: 100%;
+    height: 20rem;
 }
 
-.about__title {
-    color: white;
-    font-family: 'Urbanist';
-    font-size: 3rem;
-    margin-bottom: 2rem;
-   
+.about__bios {
+    margin-top: 2rem;
+    padding: 0 2rem;
+
 }
 
 .about__bio {
-    color: white;
     font-family: 'Urbanist';
+    color: white;
     font-size: 1.25rem;
-    font-weight: 200;
+    margin-bottom: 1rem;
     text-align: justify;
-    margin-bottom: 2rem;
 }
 
 .about__bio.accent {
-    font-size: 1.5rem;
-    font-weight: 300;
 
-}
-
-.about__bio.txt-left {
-    align-self: flex-start;
 }
 
 .about__bio.txt-right {
-    align-self: flex-end;
+    text-align: right;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
